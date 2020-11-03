@@ -1,0 +1,116 @@
+body {
+  margin: 0 10px;
+}
+
+.header,
+.navbar-list,
+.body,
+.footer {
+  border: solid 1px black;
+}
+
+.navbar,
+.body,
+.footer {
+  margin-top: 5px;
+}
+
+.header {
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-list {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.navbar-list.active {
+  background-color: grey;
+}
+
+.navbar-list.hidden {
+  display: none;
+}
+
+.body {
+  padding: 5px 10px;
+}
+
+.body-content {
+  display: none;
+}
+
+.body-content.active {
+  display: block;
+}
+
+.containerContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowForm {
+  margin-top: 5px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.rowButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.label {
+  width: 80px;
+}
+
+.colon {
+  width: 5px;
+}
+
+.input {
+  width: max-content;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 10px;
+  }
+}
+
+.rowPerPageSelector {
+  display: flex;
+  margin: 20px 0px;
+}
+
+#select {
+  margin-left: 10px;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.page-no {
+  padding: 5px;
+  margin: 2px;
+}

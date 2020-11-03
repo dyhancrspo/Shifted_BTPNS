@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTPNS</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">ini header</div>
+    <div class="navbar">
+      <div class="navbar-list" content="home">Home</div>
+      <div class="navbar-list" content="about">About</div>
+      <div class="navbar-list" content="contact">Contact Us</div>
+      <div class="navbar-list" content="masuk">Masuk</div>
+      <div class="navbar-list" content="daftar">Daftar</div>
+      <div class="navbar-list hidden" content="keluar">Keluar</div>
+    </div>
+    <div class="body">
+      <div class="body-content" menu="home">
+        <div class="rowPerPageSelector">
+          <label for="Display">Tampilkan Jumlah Data:</label>
+          <select id="select">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="5px"
+          border="1"
+          data="user"
+        >
+          <tr>
+            <th width="20px">No</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+            <th width="100px">Aksi</th>
+          </tr>
+        </table>
+        <div class="page-container"></div>
+      </div>
+      <div class="body-content" menu="about">About</div>
+      <div class="body-content" menu="contact">Contact Us</div>
+      <div class="body-content" menu="masuk">
+        <div class="containerContent">
+          <div class="containerForm">
+            <form action="" name="login">
+              <div class="rowForm">
+                <div class="label">Email</div>
+                <div class="colon">:</div>
+                <div class="input">
+                  <input type="email" name="email" id="" />
+                </div>
+              </div>
+              <div class="rowForm">
+                <div class="label">Password</div>
+                <div class="colon">:</div>
+                <div class="input">
+                  <input type="password" name="password" id="" />
+                </div>
+              </div>
+              <div class="rowForm">
+                <input type="button" value="Masuk" id="buttonLogin" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="body-content" menu="daftar">
+        <div class="containerContent">
+          <div class="containerForm">
+            <form action="" name="register">
+              <div class="rowForm">
+                <div class="label">Nama</div>
+                <div class="colon">:</div>
+                <div class="input">
+                  <input type="text" name="nama" id="" />
+                  <input type="hidden" name="id" />
+                </div>
+              </div>
+              <div class="rowForm">
+                <div class="label">Email</div>
+                <div class="colon">:</div>
+                <div class="input">
+                  <input type="email" name="email" id="" />
+                </div>
+              </div>
+              <div class="rowForm">
+                <div class="label">Password</div>
+                <div class="colon">:</div>
+                <div class="input">
+                  <input type="password" name="password" id="" />
+                </div>
+              </div>
+              <div class="rowForm">
+                <div class="label">Jenis Kelamin</div>
+                <div class="colon">:</div>
+                <div class="input">
+                  <select name="jk" id="">
+                    <option value="">-- Silakan Pilih --</option>
+                    <option value="L">Laki-laki</option>
+                    <option value="P">Perempuan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="rowForm">
+                <div class="rowButton">
+                  <input type="button" value="Simpan" id="buttonRegister" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">&copy; 2020</div>
+  </body>
+</html>
